@@ -1,6 +1,6 @@
 # Playfinity
 
-![Print do projeto](https://i.ibb.co/34nRVzb/game.png)]
+![Print do projeto](https://i.ibb.co/34nRVzb/game.png)
 
 ## Tecnologias Aplicadas
 - Angular
