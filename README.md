@@ -1,8 +1,6 @@
-# Projeto Imobiliária Lar Feliz
-## Projeto desenvolvido em Angular pela turma 1029
+# PPlayfinity
 
-![Print do projeto](https://i.ibb.co/5n4dtv9/Screenshot-2023-08-04-at-16-36-18.png)]
-
+![Print do projeto](https://i.ibb.co/3cH6RHW/imagem.png)]
 Este é um projeto desenvolvido em Angular pela turma 1029 da Start Tech TOTVS durante o módulo 03.
 
 ## Tecnologias Aplicadas
@@ -35,3 +33,6 @@ ng serve
 ```
 
 Prontinho! O seu projeto estará rodando no endereço http://localhost:4200
+
+## Autor
+- Gabriel Scandurra
