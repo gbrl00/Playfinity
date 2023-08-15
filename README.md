@@ -1,7 +1,6 @@
-# PPlayfinity
+# Playfinity
 
-![Print do projeto](https://i.ibb.co/3cH6RHW/imagem.png)]
-Este é um projeto desenvolvido em Angular pela turma 1029 da Start Tech TOTVS durante o módulo 03.
+![Print do projeto](https://i.ibb.co/34nRVzb/game.png)]
 
 ## Tecnologias Aplicadas
 - Angular
