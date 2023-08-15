@@ -1,0 +1,33 @@
+@import "../app.component.scss";
+
+
+mat-toolbar {
+    background-color: rgb(42, 42, 42);
+    color: rgb(227, 243, 6);
+
+    
+
+    .container {
+        width: 1140px;
+        display: flex;
+        margin: auto;
+        h1 {
+            font-family: $fonte-principal;
+            font-size: 30px;
+            color: yellow;
+            padding-top: 15px; 
+           
+        }
+        .menu-spacer {
+            flex: 1 1 auto;
+        }
+        button {
+            margin-top: 10px;
+            &:hover {
+                color: yellow;
+            }
+            padding-left: 50px;
+            
+        }
+    }
+}

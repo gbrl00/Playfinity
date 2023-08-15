@@ -1,0 +1,64 @@
+
+
+    <div class="container">
+        <h1> Bem vindo!</h1>
+        <!-- <h2>{{ data | date : 'dd    /MM/YYYY' }}</h2> -->
+        <section id="games-favoritos">
+            <h2>Meus favoritos:</h2>
+            <mat-grid-list cols="4" rowHeight="3:4">
+                <div *ngFor="let games of games; let i = index">
+                    <mat-grid-tile *ngIf="games.favorito">
+                        <mat-card>
+                            <img mat-card-image [src]="games.foto" [alt]="games.titulo" />
+                            <mat-card-content>
+                                <h3>{{ games.titulo }}</h3>
+                                <ul>
+                                    <li>Preço: {{ games.preco | currency }}</li>
+                                    <li>Categoria:{{games.categoria}}</li>
+                                </ul>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button
+                                    [class]="games.favorito === false ? 'favorite' : 'favorite-checked'"
+                                    [title]="games.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                                    mat-button
+                                    (click)="toogleFavorito(i)">
+                                    <mat-icon> star aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                            </button> 
+                                <button mat-button (click)="verDetalhes(games.id)">Mais detalhes</button>
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-grid-tile>
+                </div>
+            </mat-grid-list>
+        </section>
+        <section id="lista-games">
+            <h2>Todos os games:</h2>
+            <mat-grid-list cols="4" rowHeight="3:4">
+                <mat-grid-tile *ngFor="let games of games; let i = index">
+                    <mat-card>
+                        <img mat-card-image [src]="games.foto" [alt]="games.titulo" />
+                        <mat-card-content>
+                            <h3>{{ games.titulo }}</h3>
+                            <ul>
+                                <li>Preço: {{ games.preco | currency }}</li>
+                                <li>Categoria:{{games.categoria }}</li>
+                            </ul>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button
+                                [class]="games.favorito === false ? 'favorite' : 'favorite-checked'"
+                                [title]="games.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                                mat-button
+                                (click)="toogleFavorito(i)">
+                                <mat-icon> star aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                            </button> 
+                            <button mat-button (click)="verDetalhes(games.id)">Mais detalhes</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </section>
+    </div>
+
+
